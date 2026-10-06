@@ -858,11 +858,12 @@
     missing_name: "請輸入班級名稱。",
     missing_quests: "請至少勾選一個關卡。",
     record_too_large: "紀錄太大，無法繳交。",
-    no_api: "還沒有設定繳交伺服器網址。"
+    no_api: "還沒有填 Apps Script 網址。",
+    bad_api: "Apps Script 網址格式不對，請貼上「部署作業」裡以 /exec 結尾的那串網址。"
   };
   function apiErrText(e) {
     var m = e && e.message || String(e);
-    return API_ERR[m] || (/fetch|network|Load failed/i.test(m) ? "連不上繳交伺服器，請檢查網路後再試一次。" : "發生錯誤：" + m);
+    return API_ERR[m] || (/fetch|network|Load failed|JSON|Unexpected token/i.test(m) ? "連不上繳交伺服器。請確認網址是以 /exec 結尾，而且 Apps Script「管理部署作業」的存取權是「所有人」（不是「擁有 Google 帳戶的所有人」）。" : "發生錯誤：" + m);
   }
   function viaScriptRun(req) {
     // inside the Apps Script web app: call the server directly, no CORS involved
@@ -1018,15 +1019,15 @@
   }
   function teacherClass() {
     var t = store.teacher, connected = !!teacherApi() && !!t.key;
+    var err = online.error ? '<p class="callout" style="border-color:var(--bad)">' + esc(online.error) + "</p>" : "";
     var setup = '<div class="sheet panel"><div class="spread"><h3>繳交伺服器設定</h3>' + (connected ? '<span class="chip" style="color:var(--good);border-color:var(--good)">已設定</span>' : '<span class="chip">尚未設定</span>') + "</div>" +
       '<p class="muted small">第一次使用：照著 backend/README.md 建立 Google 試算表與 Apps Script，把部署後的網址和你設定的教師密碼填在這裡。這些只存在這台電腦。</p>' +
       '<form id="setupForm" class="stack" autocomplete="off"><div class="row">' +
-      '<label class="field" style="flex:2 1 300px">Apps Script 網址<input type="text" id="tApi" value="' + esc(t.api || CONFIG.apiUrl || "") + '" placeholder="https://script.google.com/macros/s/…/exec"></label>' +
-      '<label class="field" style="flex:1 1 160px">教師密碼<input type="password" id="tKey" value="' + esc(t.key) + '"></label></div>' +
+      '<label class="field" style="flex:2 1 300px">Apps Script 網址<input type="url" id="tApi" autocomplete="off" spellcheck="false" inputmode="url" value="' + esc(t.api || CONFIG.apiUrl || "") + '" placeholder="https://script.google.com/macros/s/…/exec"></label>' +
+      '<label class="field" style="flex:1 1 160px">教師密碼<input type="password" id="tKey" autocomplete="new-password" value="' + esc(t.key) + '"></label></div>' +
       '<label class="field">學生用的網站網址（QR code 會連到這裡）<input type="text" id="tSite" value="' + esc(t.site || siteBase()) + '" placeholder="例如 https://你的帳號.github.io/reading-site/"></label>' +
       '<div class="row"><button class="btn primary" type="submit">儲存並讀取班級</button></div></form></div>';
-    if (!connected) return setup;
-    var err = online.error ? '<p class="callout" style="border-color:var(--bad)">' + esc(online.error) + "</p>" : "";
+    if (!connected) return err + setup;
     var create = '<div class="sheet panel"><h3>建立班級</h3><form id="classForm" class="stack" autocomplete="off"><div class="row">' +
       '<label class="field" style="flex:2 1 220px">班級名稱<input type="text" id="cName" maxlength="40" required placeholder="例如：五年二班 閱讀闖關"></label>' +
       '<label class="field" style="flex:1 1 120px">年級<select id="cGrade">' + [1, 2, 3, 4, 5, 6].map(function (g) { return '<option value="' + g + '"' + (g === 5 ? " selected" : "") + ">" + g + " 年級</option>"; }).join("") + "</select></label></div>" +
@@ -1088,8 +1089,12 @@
   document.addEventListener("submit", function (e) {
     if (e.target.id === "setupForm") {
       e.preventDefault();
-      store.teacher.api = $("#tApi").value.trim(); store.teacher.key = $("#tKey").value; store.teacher.site = $("#tSite").value.trim();
-      save(); online.classes = null; loadClasses();
+      var api = $("#tApi").value.trim(), key = $("#tKey").value.trim();
+      store.teacher.key = key; store.teacher.site = $("#tSite").value.trim();
+      if (!api) { save(); online.error = API_ERR.no_api; render(); return; }
+      if (!/^https:\/\/script\.google(usercontent)?\.com\/.+\/exec(\?.*)?$/.test(api)) { save(); online.error = API_ERR.bad_api; render(); return; }
+      if (!key) { save(); online.error = "請輸入教師密碼（就是 Code.gs 第 9 行 TEACHER_KEY 引號裡的字）。"; render(); return; }
+      store.teacher.api = api; save(); online.classes = null; loadClasses();
     }
     if (e.target.id === "classForm") {
       e.preventDefault();
