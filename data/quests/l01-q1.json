@@ -1,0 +1,276 @@
+{
+  "quest_id": "l01-q1",
+  "text_id": "l01",
+  "title": "誰最棒",
+  "grade_band": "low",
+  "genre": "記敘",
+  "paragraph_count": 7,
+  "settings": {
+    "unlock_rule": "none",
+    "hint_costs_points": false,
+    "read_aloud": true,
+    "zhuyin": true
+  },
+  "warm_up": {
+    "prompt": "看到題目〈誰最棒〉，你猜故事在說什麼？",
+    "options": [
+      "大家在說誰很棒",
+      "小狗在找骨頭",
+      "大家去動物園",
+      "下雨天在家玩"
+    ],
+    "scored": false
+  },
+  "questions": [
+    {
+      "qid": "q01",
+      "level": 1,
+      "level_name": "提取訊息",
+      "sublevel": null,
+      "stem": "誰會彈鋼琴？",
+      "options": {
+        "A": "小安",
+        "B": "小青",
+        "C": "小美",
+        "D": "小芬"
+      },
+      "answer": "B",
+      "evidence_paragraph": [
+        2
+      ],
+      "evidence_quote": "她會彈鋼琴",
+      "hint": "再讀一次第 2 段，小安指著誰？",
+      "option_feedback": {
+        "A": "小安是說話的人，她說的是別人會彈鋼琴。",
+        "C": "小美說的是小杰會說故事。",
+        "D": "小芬是跳繩跳得最快的人。"
+      },
+      "teacher": {
+        "intent": "檢核學生能否找出句中「她」指的是誰，屬層次一。",
+        "misconception": "把說話的人當成被稱讚的人。",
+        "teaching_point": "「她」指的是前面被指著的人。"
+      }
+    },
+    {
+      "qid": "q02",
+      "level": 1,
+      "level_name": "提取訊息",
+      "sublevel": null,
+      "stem": "阿明幫小雯撿起什麼？",
+      "options": {
+        "A": "帽子",
+        "B": "書包",
+        "C": "水壺",
+        "D": "鉛筆"
+      },
+      "answer": "A",
+      "evidence_paragraph": [
+        6
+      ],
+      "evidence_quote": "幫小雯撿起被風吹走的帽子",
+      "hint": "讀一讀第 6 段老師說的話。",
+      "option_feedback": {
+        "B": "第 6 段沒有說到書包。",
+        "C": "第 6 段沒有說到水壺。",
+        "D": "第 6 段沒有說到鉛筆。"
+      },
+      "teacher": {
+        "intent": "檢核學生能否找出明寫的物品，屬層次一。",
+        "misconception": "憑想像作答。",
+        "teaching_point": "答案要在文章裡找得到。"
+      }
+    },
+    {
+      "qid": "q03",
+      "level": 2,
+      "level_name": "推論分析",
+      "sublevel": null,
+      "stem": "老師問完，有幾個小朋友回答？",
+      "options": {
+        "A": "三個",
+        "B": "五個",
+        "C": "四個",
+        "D": "八個"
+      },
+      "answer": "C",
+      "evidence_paragraph": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "evidence_quote": "小安、小美、小宇、阿明",
+      "hint": "從第 2 段數到第 5 段，數一數是誰在說話。",
+      "option_feedback": {
+        "A": "再數一次，第 5 段的阿明也有說話喔。",
+        "B": "被指著的小朋友沒有說話，只數說話的人。",
+        "D": "被指著的人不算，只數說話的人。"
+      },
+      "teacher": {
+        "intent": "檢核學生能否跨段數出說話的人數，屬層次二。",
+        "misconception": "把被指著的人也算進去。",
+        "teaching_point": "數人數時，先想清楚要數的是哪一種人。"
+      }
+    },
+    {
+      "qid": "q04",
+      "level": 2,
+      "level_name": "推論分析",
+      "sublevel": null,
+      "stem": "哪一件事最早發生？",
+      "options": {
+        "A": "阿明撿帽子",
+        "B": "老師去小可家",
+        "C": "大家午餐聊天",
+        "D": "老師拍拍手"
+      },
+      "answer": "B",
+      "evidence_paragraph": [
+        1,
+        6,
+        7
+      ],
+      "evidence_quote": "老師前天去小可家拜訪",
+      "hint": "找一找「前天」和「今天早上」這些表示時間的詞。",
+      "option_feedback": {
+        "A": "撿帽子是今天早上，還有更早的事。",
+        "C": "午餐是今天中午，還有更早的事。",
+        "D": "拍拍手是上課的時候，是很後面的事。"
+      },
+      "teacher": {
+        "intent": "檢核學生能否依時間詞排出事件先後，屬層次二。",
+        "misconception": "照故事出現的順序作答。",
+        "teaching_point": "故事說的順序不一定是事情發生的順序。"
+      }
+    },
+    {
+      "qid": "q05",
+      "level": 3,
+      "level_name": "詮釋整合",
+      "sublevel": null,
+      "stem": "這篇文章最想告訴我們什麼？",
+      "options": {
+        "A": "會彈鋼琴才最棒",
+        "B": "跳繩要跳得很快",
+        "C": "吃完午餐要聊天",
+        "D": "每個人都有棒的地方"
+      },
+      "answer": "D",
+      "evidence_paragraph": [
+        6,
+        7
+      ],
+      "evidence_quote": "大家都很棒",
+      "hint": "老師最後對全班說了什麼？",
+      "option_feedback": {
+        "A": "小青會彈鋼琴很棒，可是其他人也很棒。",
+        "B": "跳繩只是小芬很棒的地方。",
+        "C": "聊天只是故事開始的時候。"
+      },
+      "teacher": {
+        "intent": "檢核學生能否說出全文最想告訴我們的話，屬層次三。",
+        "misconception": "把一個人的優點當成全文重點。",
+        "teaching_point": "故事最後的話常常是最想告訴我們的。"
+      }
+    },
+    {
+      "qid": "q06",
+      "level": 3,
+      "level_name": "詮釋整合",
+      "sublevel": null,
+      "stem": "文中的老師是怎樣的老師？",
+      "options": {
+        "A": "會發現大家的優點",
+        "B": "只誇獎會才藝的人",
+        "C": "常常罵學生偷懶",
+        "D": "不喜歡學生聊天"
+      },
+      "answer": "A",
+      "evidence_paragraph": [
+        6,
+        7
+      ],
+      "evidence_quote": "你很棒呀！",
+      "hint": "看看老師對阿明和小可說了什麼。",
+      "option_feedback": {
+        "B": "阿明幫人撿帽子，老師也誇他很棒。",
+        "C": "文中老師沒有罵人。",
+        "D": "老師走過來和聊天的小朋友說話。"
+      },
+      "teacher": {
+        "intent": "檢核學生能否整合全文判斷人物特質，屬層次三。",
+        "misconception": "沒有把老師的兩段話合起來看。",
+        "teaching_point": "要看人物說的好幾句話，才知道他是怎樣的人。"
+      }
+    },
+    {
+      "qid": "q07",
+      "level": 4,
+      "level_name": "評估與評論",
+      "sublevel": "4A",
+      "stem": "很多句子都像「她最棒，她會……」，這樣寫有什麼好處？",
+      "options": {
+        "A": "讓文章變得比較長",
+        "B": "讓我們知道誰說謊",
+        "C": "讀起來整齊又好比較",
+        "D": "告訴我們誰最厲害"
+      },
+      "answer": "C",
+      "evidence_paragraph": [
+        2,
+        3,
+        4
+      ],
+      "evidence_quote": "她最棒，她會……",
+      "hint": "把第 2、3、4 段放在一起讀，有沒有覺得很像？",
+      "option_feedback": {
+        "A": "句子很像，不是為了讓文章變長。",
+        "B": "文中沒有人說謊。",
+        "D": "故事最後說大家都很棒，沒有誰最厲害。"
+      },
+      "teacher": {
+        "intent": "檢核學生能否感受重複句型的效果，屬層次四 A。",
+        "misconception": "以為重複只是湊字數。",
+        "teaching_point": "一樣的句子排在一起，讀起來整齊，也方便比較。"
+      }
+    },
+    {
+      "qid": "q08",
+      "level": 4,
+      "level_name": "評估與評論",
+      "sublevel": "4B",
+      "stem": "最後寫小可幫忙澆花，是想說明什麼？",
+      "options": {
+        "A": "老師只喜歡小可",
+        "B": "沒說話的人也很棒",
+        "C": "奶奶很喜歡種花",
+        "D": "小可今天沒來上學"
+      },
+      "answer": "B",
+      "evidence_paragraph": [
+        7
+      ],
+      "evidence_quote": "小可每天都會幫忙澆花，也很棒！",
+      "hint": "小可有在午餐時說話嗎？老師為什麼還要說到他？",
+      "option_feedback": {
+        "A": "老師說「大家都很棒」，不是只喜歡小可。",
+        "C": "澆花的是小可，重點在小可。",
+        "D": "文中沒有說小可今天有沒有來。"
+      },
+      "teacher": {
+        "intent": "檢核學生能否理解結尾安排的作用，屬層次四 B。",
+        "misconception": "把細節當重點。",
+        "teaching_point": "故事最後加上一個人，是要讓大家知道每個人都很棒。"
+      }
+    }
+  ],
+  "remedial_pool": [],
+  "reflection": {
+    "prompt": "這一關你覺得怎麼樣？",
+    "options": [
+      "很簡單",
+      "剛剛好",
+      "有點難"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>閱讀闖關站</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC:wght@400;700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@400;700&display=swap">
+<link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <button class="brand" data-action="nav" data-view="map" aria-label="回到闖關地圖">
+      <span class="brand-seal" aria-hidden="true">閱</span>
+      <span class="brand-name">閱讀闖關站</span>
+    </button>
+    <nav class="mainnav" aria-label="主選單">
+      <button data-action="nav" data-view="map">闖關地圖</button>
+      <button data-action="nav" data-view="library">文章庫</button>
+      <button data-action="nav" data-view="journey">我的歷程</button>
+      <button data-action="nav" data-view="teacher">教師端</button>
+    </nav>
+    <button class="who" data-action="nav" data-view="profile" id="whoChip">選擇學生</button>
+  </div>
+</header>
+<main id="app" class="shell"></main>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+<script src="config.js"></script>
+<script src="vendor/qrcode.js"></script>
+<script src="data.js"></script>
+<script src="src/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,578 @@
+{
+  "quest_id": "m03-q1",
+  "text_id": "m03",
+  "title": "圈叉棋達人",
+  "grade_band": "middle",
+  "genre": "圖表推理",
+  "paragraph_count": 5,
+  "settings": {
+    "unlock_rule": "levels_1_2_then_open",
+    "hint_costs_points": false,
+    "read_aloud": false,
+    "zhuyin": false
+  },
+  "warm_up": {
+    "prompt": "看到標題〈圈叉棋達人〉，你猜文章主要會寫什麼？",
+    "options": [
+      "一個很會下棋的人",
+      "一間賣棋子的商店",
+      "一場運動會的比賽",
+      "一本教畫畫的書"
+    ],
+    "scored": false
+  },
+  "questions": [
+    {
+      "qid": "q01",
+      "level": 1,
+      "level_name": "提取訊息",
+      "sublevel": null,
+      "stem": "在安親班裡，年紀最小的是誰？",
+      "options": {
+        "A": "小宇",
+        "B": "品萱",
+        "C": "庭瑄",
+        "D": "美琪"
+      },
+      "answer": "A",
+      "evidence_paragraph": [
+        1
+      ],
+      "evidence_quote": "在安親班裡，小宇年紀最小",
+      "hint": "回到第 1 段，找一找「年紀最小」這幾個字。",
+      "option_feedback": {
+        "B": "品萱是和小宇比賽的人，文中沒有說她年紀最小。",
+        "C": "庭瑄在最後一段才出現，文中沒有說她的年紀。",
+        "D": "美琪是第一回的對手，再找找第 1 段。"
+      },
+      "teacher": {
+        "intent": "檢核學生能否找出明寫的人物資訊，屬層次一。",
+        "misconception": "被人名多的表格干擾。",
+        "teaching_point": "先找關鍵詞，再看它前後的人名。"
+      }
+    },
+    {
+      "qid": "q02",
+      "level": 1,
+      "level_name": "提取訊息",
+      "sublevel": null,
+      "stem": "根據紀錄冊，第三回小宇的對手是誰？",
+      "options": {
+        "A": "美琪",
+        "B": "志豪",
+        "C": "佳欣",
+        "D": "俊傑"
+      },
+      "answer": "C",
+      "evidence_paragraph": [
+        1
+      ],
+      "evidence_quote": "第三回｜佳欣",
+      "hint": "在紀錄冊裡找到「第三回」那一列，往右看。",
+      "option_feedback": {
+        "A": "美琪是第一回的對手。",
+        "B": "志豪是第二回的對手。",
+        "D": "俊傑是第四回的對手。"
+      },
+      "teacher": {
+        "intent": "檢核學生能否從表格中找到指定欄位的資訊，屬層次一。",
+        "misconception": "看錯列。",
+        "teaching_point": "讀表格時，用手指對齊同一列。"
+      }
+    },
+    {
+      "qid": "q03",
+      "level": 1,
+      "level_name": "提取訊息",
+      "sublevel": null,
+      "stem": "根據紀錄冊的說明，誰可以先畫？",
+      "options": {
+        "A": "年紀比較小的人",
+        "B": "猜拳贏的人",
+        "C": "上一回贏的人",
+        "D": "老師指定的人"
+      },
+      "answer": "B",
+      "evidence_paragraph": [
+        1
+      ],
+      "evidence_quote": "誰猜拳贏就先畫",
+      "hint": "看看紀錄冊標題旁邊的括號。",
+      "option_feedback": {
+        "A": "小宇年紀最小，但他不是每一回都先畫。",
+        "C": "表格裡沒有這樣的規則，看看標題的括號。",
+        "D": "文中沒有老師指定的規則。"
+      },
+      "teacher": {
+        "intent": "檢核學生能否讀出表格標題中的規則說明，屬層次一。",
+        "misconception": "忽略表格標題的補充說明。",
+        "teaching_point": "表格的標題和括號常常寫著重要規則。"
+      }
+    },
+    {
+      "qid": "q04",
+      "level": 2,
+      "level_name": "推論分析",
+      "sublevel": null,
+      "stem": "小宇先畫的那幾回，比賽結果都怎麼樣？",
+      "options": {
+        "A": "都是平手",
+        "B": "都是小宇勝",
+        "C": "有勝也有平手",
+        "D": "有一回小宇輸"
+      },
+      "answer": "B",
+      "evidence_paragraph": [
+        1
+      ],
+      "evidence_quote": "第二、四、五回小宇先畫，結果都是小宇勝",
+      "hint": "先找出「先畫的人」是小宇的那幾列，再看它們的結果。",
+      "option_feedback": {
+        "A": "平手的那兩回，先畫的都不是小宇。",
+        "C": "再對一次：小宇先畫的那幾回，有沒有平手？",
+        "D": "五回裡小宇沒有輸過任何一回。"
+      },
+      "teacher": {
+        "intent": "檢核學生能否合併表格兩欄找出規律，屬層次二。",
+        "misconception": "只看結果欄，沒有對照先畫的人。",
+        "teaching_point": "合併兩欄資訊時，先篩選再比較。"
+      }
+    },
+    {
+      "qid": "q05",
+      "level": 2,
+      "level_name": "推論分析",
+      "sublevel": null,
+      "stem": "五回比賽中，哪一位對手最快就輸了？",
+      "options": {
+        "A": "志豪",
+        "B": "品萱",
+        "C": "美琪",
+        "D": "俊傑"
+      },
+      "answer": "D",
+      "evidence_paragraph": [
+        1
+      ],
+      "evidence_quote": "第四回｜俊傑｜5 步｜小宇勝",
+      "hint": "先找出小宇贏的回合，再比一比「一共畫了幾步」。",
+      "option_feedback": {
+        "A": "志豪那一回一共畫了 7 步，還有更少的。",
+        "B": "品萱那一回一共畫了 7 步，還有更少的。",
+        "C": "美琪那一回是平手，她沒有輸。"
+      },
+      "teacher": {
+        "intent": "檢核學生能否合併「步數」與「結果」兩欄推論，屬層次二。",
+        "misconception": "只看步數，沒有確認是否輸了。",
+        "teaching_point": "比較時要同時符合兩個條件。"
+      }
+    },
+    {
+      "qid": "q06",
+      "level": 2,
+      "level_name": "推論分析",
+      "sublevel": null,
+      "stem": "根據紀錄冊和志明老師的話，下列哪一項說法最合理？",
+      "options": {
+        "A": "小宇每一回都是先畫",
+        "B": "平手的回合都是小宇先畫",
+        "C": "先畫的人在這五回都沒輸",
+        "D": "小宇贏的回合都畫了九步"
+      },
+      "answer": "C",
+      "evidence_paragraph": [
+        1,
+        3
+      ],
+      "evidence_quote": "通常先畫的比較有利",
+      "hint": "志明老師說先畫比較有利，回到表格檢查每一回先畫的人有沒有輸。",
+      "option_feedback": {
+        "A": "第一回和第三回是對手先畫。",
+        "B": "平手的兩回是美琪和佳欣先畫。",
+        "D": "畫九步的兩回都是平手。"
+      },
+      "teacher": {
+        "intent": "檢核學生能否結合文字與表格驗證說法，屬層次二。",
+        "misconception": "只記得老師的話，沒有回表格驗證。",
+        "teaching_point": "文字說法要回到表格逐列檢查。"
+      }
+    },
+    {
+      "qid": "q07",
+      "level": 3,
+      "level_name": "詮釋整合",
+      "sublevel": null,
+      "stem": "綜合全文，小宇被叫作「〇✕達人」的理由是什麼？",
+      "options": {
+        "A": "常找人挑戰又很專注投入",
+        "B": "他是安親班年紀最大的",
+        "C": "他每一回都是先畫的人",
+        "D": "他打敗過所有的老師"
+      },
+      "answer": "A",
+      "evidence_paragraph": [
+        1,
+        3
+      ],
+      "evidence_quote": "一有空檔就找人挑戰……太投入、太專注了",
+      "hint": "把第 1 段寫小宇的事，和第 3 段老師對他的評語合起來看。",
+      "option_feedback": {
+        "B": "第 1 段說小宇年紀最小。",
+        "C": "表格裡有兩回是對手先畫。",
+        "D": "老師只說輸給小宇好幾次，沒有說所有老師。"
+      },
+      "teacher": {
+        "intent": "檢核學生能否整合全文資訊說明人物特質，屬層次三。",
+        "misconception": "誤讀年紀資訊，或過度推論老師的話。",
+        "teaching_point": "說明理由時要整合不同段落的線索。"
+      }
+    },
+    {
+      "qid": "q08",
+      "level": 3,
+      "level_name": "詮釋整合",
+      "sublevel": null,
+      "stem": "這篇文章主要在說什麼？",
+      "options": {
+        "A": "志明老師教大家下圈叉棋",
+        "B": "品萱想發明新的棋子符號",
+        "C": "猜拳的運氣決定一切輸贏",
+        "D": "小宇愛下圈叉棋又很用心"
+      },
+      "answer": "D",
+      "evidence_paragraph": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "evidence_quote": "",
+      "hint": "全文從頭到尾，誰出現最多次？文章圍繞著他的哪件事？",
+      "option_feedback": {
+        "A": "志明老師只說了一段話就離開了，沒有教大家。",
+        "B": "這是品萱問的一個問題，只是結尾的細節。",
+        "C": "老師說運氣重要，但也說要專心細心，不是只靠運氣。"
+      },
+      "teacher": {
+        "intent": "檢核學生能否概括全文主要內容，屬層次三。",
+        "misconception": "把結尾的細節當成全文重點。",
+        "teaching_point": "全文主要內容要看貫穿全文的人物和事件。"
+      }
+    },
+    {
+      "qid": "q09",
+      "level": 3,
+      "level_name": "詮釋整合",
+      "sublevel": null,
+      "stem": "綜合全文，品萱是一個怎樣的人？",
+      "options": {
+        "A": "很怕輸所以不敢再玩",
+        "B": "不服輸又想找出贏的方法",
+        "C": "很細心觀察身邊的事",
+        "D": "很會猜拳常常先畫"
+      },
+      "answer": "B",
+      "evidence_paragraph": [
+        1,
+        4,
+        5
+      ],
+      "evidence_quote": "品萱輸了很不甘心，拿起小宇的小冊子認真的研究",
+      "hint": "看第 4 段品萱輸了以後做了什麼，再看第 5 段別人怎麼說她。",
+      "option_feedback": {
+        "A": "品萱沒有放棄，還拿小冊子來研究。",
+        "C": "第 5 段庭瑄說她觀察力差，連老師走了都沒發現。",
+        "D": "第五回品萱出石頭、小宇出布，是小宇先畫。"
+      },
+      "teacher": {
+        "intent": "檢核學生能否整合多段線索判斷人物特質，屬層次三。",
+        "misconception": "只看「認真研究」，沒注意庭瑄的評語。",
+        "teaching_point": "判斷人物要把行為和別人的評語一起看。"
+      }
+    },
+    {
+      "qid": "q10",
+      "level": 4,
+      "level_name": "評估與評論",
+      "sublevel": "4B",
+      "stem": "作者把小宇的比賽紀錄做成表格，對讀者有什麼幫助？",
+      "options": {
+        "A": "讓文章看起來比較長",
+        "B": "說明圈叉棋要怎麼畫",
+        "C": "方便比較每一回的情形",
+        "D": "證明小宇從來沒輸過"
+      },
+      "answer": "C",
+      "evidence_paragraph": [
+        1
+      ],
+      "evidence_quote": "",
+      "hint": "如果把五回比賽都寫成一句一句，和表格比起來哪一種容易看？",
+      "option_feedback": {
+        "A": "表格的重點不是讓文章變長。",
+        "B": "表格裡沒有寫圈叉棋的畫法。",
+        "D": "表格記錄了平手的回合，重點不是證明不輸。"
+      },
+      "teacher": {
+        "intent": "檢核學生能否評估表格這種呈現方式的效果，屬層次四。",
+        "misconception": "以為表格是在補充規則。",
+        "teaching_point": "表格把資料排整齊，方便讀者比較。"
+      }
+    },
+    {
+      "qid": "q11",
+      "level": 4,
+      "level_name": "評估與評論",
+      "sublevel": "4B",
+      "stem": "第 3 段寫志明老師「話一說完就直接離開」，這句話和後面哪件事有關？",
+      "options": {
+        "A": "小宇又找人玩了幾回",
+        "B": "媽媽來安親班接小宇",
+        "C": "庭瑄也跟著老師離開",
+        "D": "品萱對著不在的老師發問"
+      },
+      "answer": "D",
+      "evidence_paragraph": [
+        3,
+        4,
+        5
+      ],
+      "evidence_quote": "老師早就走了啦！",
+      "hint": "讀第 4、5 段，品萱在問誰？那個人還在嗎？",
+      "option_feedback": {
+        "A": "文中沒有寫老師離開後小宇又玩了幾回。",
+        "B": "文中沒有寫媽媽來接小宇。",
+        "C": "庭瑄還在現場，她對品萱說話。"
+      },
+      "teacher": {
+        "intent": "檢核學生能否看出前文的安排為後文情節做準備，屬層次四。",
+        "misconception": "沒有把前後兩段連起來。",
+        "teaching_point": "前面一句看似不重要的話，可能是為後面的情節做準備。"
+      }
+    },
+    {
+      "qid": "q12",
+      "level": 4,
+      "level_name": "評估與評論",
+      "sublevel": "4A",
+      "stem": "第 5 段寫庭瑄「笑著」對品萱說話，這個詞讓讀者感受到什麼？",
+      "options": {
+        "A": "庭瑄覺得品萱的舉動好笑",
+        "B": "庭瑄非常生品萱的氣",
+        "C": "庭瑄正在安慰品萱",
+        "D": "庭瑄在稱讚小宇很厲害"
+      },
+      "answer": "A",
+      "evidence_paragraph": [
+        4,
+        5
+      ],
+      "evidence_quote": "庭瑄笑著對品萱說",
+      "hint": "品萱對著不在的老師發問，旁邊的人看了會有什麼感覺？",
+      "option_feedback": {
+        "B": "「笑著」說話，不像是生氣的樣子。",
+        "C": "庭瑄說品萱觀察力差，不是在安慰。",
+        "D": "庭瑄的話是對品萱說的，不是在稱讚小宇。"
+      },
+      "teacher": {
+        "intent": "檢核學生能否評估用字對人物態度的表現效果，屬層次四。",
+        "misconception": "忽略「笑著」與說話內容的搭配。",
+        "teaching_point": "一個描寫動作的詞，就能讓讀者感受人物的態度。"
+      }
+    }
+  ],
+  "remedial_pool": [
+    {
+      "qid": "r01",
+      "level": 1,
+      "level_name": "提取訊息",
+      "sublevel": null,
+      "stem": "第二回比賽時，小宇猜拳出了什麼？",
+      "options": {
+        "A": "石頭",
+        "B": "剪刀",
+        "C": "布",
+        "D": "沒有猜拳"
+      },
+      "answer": "B",
+      "evidence_paragraph": [
+        1
+      ],
+      "evidence_quote": "第二回｜剪刀／布",
+      "hint": "找到第二回那一列，看「猜拳」欄斜線的左邊。",
+      "option_feedback": {
+        "A": "第一回和第四回小宇才出石頭。",
+        "C": "布是志豪出的，斜線右邊是對手。",
+        "D": "每一回都要先猜拳。"
+      },
+      "teacher": {
+        "intent": "補強層次一：讀出表格欄位。",
+        "misconception": "分不清斜線左右的意思。",
+        "teaching_point": "看清楚欄名「小宇／對手」。"
+      },
+      "for_level": 1
+    },
+    {
+      "qid": "r02",
+      "level": 1,
+      "level_name": "提取訊息",
+      "sublevel": null,
+      "stem": "小宇把每一次比賽的過程記在哪裡？",
+      "options": {
+        "A": "自己設計的小冊子",
+        "B": "安親班的白板",
+        "C": "老師的筆記本",
+        "D": "媽媽的手機"
+      },
+      "answer": "A",
+      "evidence_paragraph": [
+        1
+      ],
+      "evidence_quote": "自己設計了一本小冊子",
+      "hint": "第 1 段有寫小宇自己設計了一樣東西。",
+      "option_feedback": {
+        "B": "文中沒有提到白板。",
+        "C": "文中沒有提到老師的筆記本。",
+        "D": "文中沒有提到手機。"
+      },
+      "teacher": {
+        "intent": "補強層次一：找出明寫資訊。",
+        "misconception": "憑想像作答。",
+        "teaching_point": "答案要在文中找得到。"
+      },
+      "for_level": 1
+    },
+    {
+      "qid": "r03",
+      "level": 1,
+      "level_name": "提取訊息",
+      "sublevel": null,
+      "stem": "志明老師說，圈叉棋是一種需要什麼的比賽？",
+      "options": {
+        "A": "力氣很大",
+        "B": "年紀比較大",
+        "C": "專心和細心",
+        "D": "好看的符號"
+      },
+      "answer": "C",
+      "evidence_paragraph": [
+        3
+      ],
+      "evidence_quote": "這是一種需要專心和細心的比賽",
+      "hint": "在第 3 段找「需要」這兩個字。",
+      "option_feedback": {
+        "A": "文中沒有提到力氣。",
+        "B": "小宇年紀最小卻很厲害。",
+        "D": "符號是品萱問的問題，老師沒有說。"
+      },
+      "teacher": {
+        "intent": "補強層次一：找出人物話中的明寫資訊。",
+        "misconception": "把品萱的問題混進老師的話。",
+        "teaching_point": "分清楚是誰說的話。"
+      },
+      "for_level": 1
+    },
+    {
+      "qid": "r04",
+      "level": 2,
+      "level_name": "推論分析",
+      "sublevel": null,
+      "stem": "紀錄冊中平手的回合，有什麼共同點？",
+      "options": {
+        "A": "都是小宇先畫",
+        "B": "兩人都畫滿九步",
+        "C": "對手都出剪刀",
+        "D": "小宇猜拳都贏"
+      },
+      "answer": "B",
+      "evidence_paragraph": [
+        1
+      ],
+      "evidence_quote": "第一回、第三回｜9 步｜平手",
+      "hint": "先找出結果是平手的回合，再一欄一欄比較。",
+      "option_feedback": {
+        "A": "平手的兩回都是對手先畫。",
+        "C": "美琪出布、佳欣出剪刀，不一樣。",
+        "D": "平手的兩回小宇猜拳都輸了。"
+      },
+      "teacher": {
+        "intent": "補強層次二：比較表格多列找共同點。",
+        "misconception": "只比較一欄。",
+        "teaching_point": "找共同點要一欄一欄檢查。"
+      },
+      "for_level": 2
+    },
+    {
+      "qid": "r05",
+      "level": 2,
+      "level_name": "推論分析",
+      "sublevel": null,
+      "stem": "五回比賽中，小宇猜拳一共贏了幾回？",
+      "options": {
+        "A": "一回",
+        "B": "兩回",
+        "C": "三回",
+        "D": "五回"
+      },
+      "answer": "C",
+      "evidence_paragraph": [
+        1
+      ],
+      "evidence_quote": "第二、四、五回小宇先畫",
+      "hint": "猜拳贏的人可以先畫，數一數「先畫的人」是小宇的有幾回。",
+      "option_feedback": {
+        "A": "再數一次先畫的人是小宇的回合。",
+        "B": "再數一次先畫的人是小宇的回合。",
+        "D": "第一回和第三回是對手先畫。"
+      },
+      "teacher": {
+        "intent": "補強層次二：結合規則與表格計數。",
+        "misconception": "沒有利用「猜拳贏就先畫」的規則。",
+        "teaching_point": "利用規則可以幫助讀表。"
+      },
+      "for_level": 2
+    },
+    {
+      "qid": "r06",
+      "level": 2,
+      "level_name": "推論分析",
+      "sublevel": null,
+      "stem": "根據第 3 段和第 4 段，品萱的問題為什麼沒有得到老師的回答？",
+      "options": {
+        "A": "老師聽不懂問題",
+        "B": "老師在和小宇下棋",
+        "C": "老師不想理品萱",
+        "D": "老師已經先離開了"
+      },
+      "answer": "D",
+      "evidence_paragraph": [
+        3,
+        4,
+        5
+      ],
+      "evidence_quote": "話一說完就直接離開",
+      "hint": "第 3 段最後，老師做了什麼？",
+      "option_feedback": {
+        "A": "老師根本沒有聽到問題。",
+        "B": "老師說今天先不跟小宇玩了。",
+        "C": "老師不是故意不理，他已經不在現場。"
+      },
+      "teacher": {
+        "intent": "補強層次二：連結兩段推論原因。",
+        "misconception": "沒注意老師已離開。",
+        "teaching_point": "前後段的情節要連起來看。"
+      },
+      "for_level": 2
+    }
+  ],
+  "reflection": {
+    "prompt": "這一關，我找答案的方法是……",
+    "options": [
+      "回到文章找關鍵詞",
+      "對照表格一欄一欄看",
+      "把前後段連起來想",
+      "憑印象直接作答"
+    ]
+  }
+}
